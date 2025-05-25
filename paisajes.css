@@ -1,0 +1,39 @@
+body{
+    background-image: url("./image/fondo\ nubes.png");
+    display: fixed;
+}
+
+p{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50pt;
+    text-align: center;
+
+}
+
+.img-paisajes{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30pt;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.container{
+ display: flex;
+    flex-direction: row;         /* Alineación en fila */
+    justify-content: center;     /* Centrado horizontal */
+    align-items: center;         /* Centrado vertical */
+    gap: 20px;                   /* Espacio entre elementos (opcional) */
+    text-align: center;
+}

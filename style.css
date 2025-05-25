@@ -1,0 +1,132 @@
+/* Fuentes y variables base */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f6f2;
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav a:hover {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* Hero principal */
+.hero {
+    background-image: url(https://image.onoffice.de/smart20/Objekte/mr/1005/6143d0d3-9bad-42a4-a7a9-a189eb5c3f68.jpg); /* Reemplazar con tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 200px 30px;
+}
+
+.titulo-finca {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgb(247, 243, 243); /* Relleno negro */
+    -webkit-text-stroke: 1.5px #1d1b13; /* Borde dorado */
+    position: relative;
+    animation: fadeInUp 1.5s ease-out;
+    background-color: transparent;
+}
+
+/* Línea decorativa debajo */
+.titulo-finca::after {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 5px;
+    background-color: #d4af37;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Animación de aparición */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitulo {
+    font-size: 1.8rem;
+  color: rgb(250, 232, 102);
+
+}
+
+p {
+  font-weight: bold; /* o 700, 800, 900 */
+}
+
+
+.card-finca {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.card-finca h2.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-finca h3 {
+  color: #8a6d3b;
+  margin-top: 25px;
+  font-size: 1.3rem;
+}
+
+.card-finca p.card-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.card-finca ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.card-finca ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
