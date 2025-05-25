@@ -1,59 +1,99 @@
- /* General styles */
+/* Fondo con imagen y overlay oscuro */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-.contact-section {
-    padding: 40px;
-    text-align: center;
-}
-
-.contact-info p, .social-links a {
-    font-size: 18px;
+    background-image: url('./image/logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     color: #333;
+    min-height: 100vh;
+}
+
+/* Overlay oscuro para mejorar contraste */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparente negro */
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.contact-section, footer, header {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.85); /* blanco translúcido */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: rgba(31, 41, 55, 0.85);
+    color: white;
+    padding: 40px 20px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-radius: 12px;
+}
+
+/* Texto sección contacto */
+.contact-section h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1f2937;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 12px 0;
+    color: #111827;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #2563eb;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.contact-info p a {
-    color: #007bff;
+.contact-info a:hover {
+    color: #1e40af;
 }
 
-.contact-info p a:hover {
-    text-decoration: underline;
+/* Footer */
+footer {
+    background-color: rgba(229, 231, 235, 0.85);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 15px;
-    font-size: 24px;
-    color: #333;
+    margin: 0 8px;
+    color: #374151;
     text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #007bff;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    color: #111827;
 }
